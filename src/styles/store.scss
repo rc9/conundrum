@@ -1,0 +1,15 @@
+.store {
+    /* min-height: 100%; */
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+    .image-li {
+        max-width: 33%;
+        float: left;
+    }
+}
+
+.store-title {
+    min-height: 3vmin;
+}
