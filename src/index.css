@@ -17,22 +17,6 @@ code {
   color: #282c34;
 }
 
-.store {
-  /* min-height: 100%; */
-  color: white;
-  align-items: center;
-  justify-content: center;
-}
-
-.store-title {
-  min-height: 3vmin;
-}
-
-.store .image-li {
-  max-width: 33%;
-  float: left;
-}
-
 .signup iframe {
   margin: 5px;
 }
