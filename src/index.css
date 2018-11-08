@@ -36,3 +36,16 @@ code {
 .signup iframe {
   margin: 5px;
 }
+
+.sidebar {
+  padding: 10px;
+  background-color: #282c34;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:visited {
+  color: #61dafb;
+}
