@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../index.css';
+import '../styles/index.css';
+import '../styles/store.scss';
 import soonImg from '../images/coming-soon.jpg';
 
 export default class Store extends Component {
