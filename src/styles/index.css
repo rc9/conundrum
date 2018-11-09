@@ -37,3 +37,21 @@ code {
 div.shamwow-gif {
   padding: 15px;
 }
+
+div.conundrum-header {
+  padding: 5px;
+  font-size: 36px;
+}
+
+div.conundrum-footer {
+  padding: 5px;
+  font-size: 14px;
+}
+
+div.conundrum-footer a {
+  color: aliceblue;
+}
+
+div.conundrum-footer hr {
+  margin: 0;
+}

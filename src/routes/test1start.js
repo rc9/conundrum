@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import Header from '../header.js';
+import Footer from '../footer.js';
 import '../App.css';
 import '../styles/test1start.scss';
 
@@ -7,9 +8,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="App">
-        <header className="conundrum-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
+        <Header />
         <div className="instructions">
           <div>
             <p className="opening">
@@ -38,6 +37,7 @@ export default class Home extends Component {
             <br />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
