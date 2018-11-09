@@ -33,3 +33,7 @@ code {
 .sidebar a:visited {
   color: #61dafb;
 }
+
+div.shamwow-gif {
+  padding: 15px;
+}
