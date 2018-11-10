@@ -43,8 +43,13 @@ div.conundrum-header {
   font-size: 36px;
 }
 
+div.conundrum-header p {
+  font-size: 36px;
+  margin: 20px 20px 10px 20px;
+}
+
 div.conundrum-footer {
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
 }
 

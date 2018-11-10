@@ -12,7 +12,7 @@ export default class Store extends Component {
             <div className="image-list">
                 {[...Array(18)].map((_, i) => 
                     <div className="image-li" key={i}>
-                        <img className="stock-img" src={soonImg} />
+                        <img className="stock-img" src={soonImg} alt="Coming Soon..."/>
                     </div>
                 )}
             </div>

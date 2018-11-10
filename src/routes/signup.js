@@ -18,7 +18,7 @@ export default class Signup extends Component {
             In the meantime, subscribe below to stay up to date on our launch!
           </div>
           <div className="signup">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeN94plZLyRT7uLfwqYbW1LY-D_pvccizqzrqHFcgSZl3d1QQ/viewform?embedded=true" width="100%" height="770" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeN94plZLyRT7uLfwqYbW1LY-D_pvccizqzrqHFcgSZl3d1QQ/viewform?embedded=true" width="100%" height="770" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
           </div>
         </div>
         <Footer />

@@ -7,7 +7,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: color-fade-zoom infinite 5s alternate;
   height: 40vmin;
 }
 
@@ -23,6 +23,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@keyframes color-fade-zoom {
+  from {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 @keyframes App-logo-spin {
