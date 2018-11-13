@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header.js';
 import Footer from '../footer.js';
-import '../App.css';
+import '../styles/index.css';
 import '../styles/test1start.scss';
 
 export default class Home extends Component {

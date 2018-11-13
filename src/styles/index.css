@@ -53,10 +53,51 @@ div.conundrum-footer {
   font-size: 14px;
 }
 
+div.conundrum-footer p {
+  padding: 0px;
+  margin: 1vh;
+}
+
 div.conundrum-footer a {
   color: aliceblue;
 }
 
 div.conundrum-footer hr {
   margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100%;
+  color: white;
+}
+
+.App p {
+  padding: 15px;
+}
+
+.App-logo {
+  animation: color-fade-zoom infinite 5s alternate;
+  height: 40vmin;
+}
+
+
+@keyframes color-fade-zoom {
+  from {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.instructions {
+  background-color: #282c34;
+  color: white;
 }
