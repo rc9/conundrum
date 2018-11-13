@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header.js';
 import Footer from '../footer.js';
-import '../styles/index.css';
+import '../styles/index.scss';
 import '../styles/welcome.scss'
 
 export default class Signup extends Component {
@@ -18,7 +18,7 @@ export default class Signup extends Component {
             In the meantime, subscribe below to stay up to date on our launch!
           </p>
           <div className="signup">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeN94plZLyRT7uLfwqYbW1LY-D_pvccizqzrqHFcgSZl3d1QQ/viewform?embedded=true" width="100%" height="770" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
+              <iframe title="google-signup" src="https://docs.google.com/forms/d/e/1FAIpQLSeN94plZLyRT7uLfwqYbW1LY-D_pvccizqzrqHFcgSZl3d1QQ/viewform?embedded=true" width="100%" height="770" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
           </div>
         </div>
         <Footer />

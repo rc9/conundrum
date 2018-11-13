@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header.js';
 import Footer from '../footer.js';
-import '../styles/index.css';
+import '../styles/index.scss';
 import infomercial from '../images/clue4.gif'
 
 export default class Video extends Component {
@@ -10,7 +10,7 @@ export default class Video extends Component {
       <div className="App">
         <Header />
         <div className="shamwow-gif">
-          <img src={infomercial} />
+          <img src={infomercial} alt="call us now at 817-873-6318"/>
         </div>
         <Footer />
       </div>

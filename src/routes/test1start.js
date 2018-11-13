@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../header.js';
 import Footer from '../footer.js';
-import '../styles/index.css';
+import '../styles/index.scss';
 import '../styles/test1start.scss';
 
 export default class Home extends Component {
@@ -27,7 +27,7 @@ export default class Home extends Component {
               <li type="num">Remember that phone number that texted you this URL! In order to proceed to the next step you’ll need to reply to that number with the correct answer.</li>
               <br />
               <li type="num">Use whatever you want to figure out the answer. This means Google, Youtube, your friends, your mom, etc. are all fair game - get creative!</li>
-              <br /><i className="hidden">2+2/2</i>
+              <div className="hidden"><i>2+2/2</i></div>
               <li type="num">Speed is your friend - the quicker you get to the end, the more points you’ll get which means future rewards and more fun once we get this fully launched. Don’t be the slow poke!</li>
               <br />
               <li type="num">Have fun and let us know what you think! After the end of this adventure, we’d love to get some feedback on what went well and what didn’t. Anything you can provide would be super helpful as we launch our second conundrum in the very near future.</li>

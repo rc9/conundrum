@@ -14,24 +14,12 @@ code {
 }
 
 .hidden {
-  color: #282c34;
+  color: #282c6f;
+  text-align: center;
 }
 
 .signup iframe {
   margin: 5px;
-}
-
-.sidebar {
-  padding: 10px;
-  background-color: #282c34;
-}
-
-.sidebar a {
-  color: white;
-}
-
-.sidebar a:visited {
-  color: #61dafb;
 }
 
 div.shamwow-gif {
@@ -41,29 +29,29 @@ div.shamwow-gif {
 div.conundrum-header {
   padding: 5px;
   font-size: 36px;
-}
 
-div.conundrum-header p {
-  font-size: 36px;
-  margin: 20px 20px 10px 20px;
+  p {
+    font-size: 36px;
+    margin: 20px 20px 10px 20px;
+  }
 }
 
 div.conundrum-footer {
   padding: 10px;
   font-size: 14px;
-}
 
-div.conundrum-footer p {
-  padding: 0px;
-  margin: 1vh;
-}
+  p {
+    padding: 0px;
+    margin: 1vh;
+  }
 
-div.conundrum-footer a {
-  color: aliceblue;
-}
+  a {
+    color: aliceblue;
+  }
 
-div.conundrum-footer hr {
-  margin: 0;
+  hr {
+    margin: 0;
+  }
 }
 
 .App {
@@ -72,10 +60,10 @@ div.conundrum-footer hr {
   min-height: 100vh;
   min-width: 100%;
   color: white;
-}
 
-.App p {
-  padding: 15px;
+  p {
+    padding: 15px;
+  }
 }
 
 .App-logo {
@@ -95,9 +83,4 @@ div.conundrum-footer hr {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
-}
-
-.instructions {
-  background-color: #282c34;
-  color: white;
 }
