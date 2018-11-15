@@ -7,7 +7,7 @@ export default class Footer extends Component {
             <div className="conundrum-footer">
                 <hr />
                 <p className="contact-us">Contact us: <a href="mailto:info@conundrumapp.com">info@conundrumapp.com</a></p>
-                <p className="inc">2018 Conundrum Media, Inc</p>
+                <p className="inc">2018 Conundrum Media, Inc. <b>&trade;</b></p>
             </div>
         )
     }
