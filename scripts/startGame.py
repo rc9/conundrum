@@ -9,7 +9,7 @@ def read_csv(filename):
         for line in reader:
             numbers.append(line[4])
 
-    print 'Done reading file {0}'.format(filename)
+    print unicode('Done reading file {0}'.format(filename))
     return numbers[1:]
 
 def send_twilio(phone, token):
@@ -23,12 +23,8 @@ def send_twilio(phone, token):
         body="Welcome to CONUNDRUM! Thanks for signing up to play the very first game! To get started, head to http://www.conundrumapp.com/herewego - Good luck!"
         )
 
-    print message.sid
-
-
-
 if(len(sys.argv) < 3):
-    print 'ERROR: You must pass a filename then the auth_token'
+    print unicode('ERROR: You must pass a filename then the auth_token')
     exit(1)
 
 filename = sys.argv[1]
@@ -38,8 +34,8 @@ ns = read_csv(filename)
 
 for n in ns:
     num = "+1" + n
-    print 'texting {0}'.format(num)
+    print unicode('texting {0}'.format(num))
     send_twilio(num, token)
 
-print 'sent {0} text(s)'.format(len(ns))
+print unicode('sent {0} text(s)'.format(len(ns)))
 
