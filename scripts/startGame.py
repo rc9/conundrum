@@ -7,7 +7,7 @@ def read_csv(filename):
     with open(filename) as csv_file:
         reader = csv.reader(csv_file, delimiter=',')
         for line in reader:
-            numbers.append(line[4])
+            numbers.append(line[3])
 
     print unicode('Done reading file {0}'.format(filename))
     return numbers[1:]
