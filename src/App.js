@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from './routes/test1start.js';
-import Video from './routes/video.js';
+import Home from './routes/start.js';
 import Signup from './routes/signup.js';
 
 class App extends React.Component {
@@ -10,11 +9,9 @@ class App extends React.Component {
     return (
       <Router>
           <Switch>
-            <Route path="/shamwow" component={Video} />
-            <Route path="/herewego" component={Home} />
+            <Route path="/gettingstarted" component={Home} />
             <Route path="/" component={Signup} />
           </Switch>
-        {/* </div> */}
       </Router>
     );
   }
