@@ -26,6 +26,8 @@ export default class Home extends Component {
             <ol className="list-indent">
               <li type="num">Remember that phone number that texted you this URL! In order to proceed to the next step you’ll need to reply to that number with the correct answer.</li>
               <br />
+              <li type="num">Each game will be open 24 hours after receiving the kickoff text! Please note if you don't respond for 3 hours you'll have to start over.</li>
+              <br />
               <li type="num">Use whatever you want to figure out the answer. This means Google, Youtube, your friends, your mom, etc. are all fair game - get creative!</li>
               <br />
               <li type="num">Speed is your friend - the quicker you get to the end, the more points you’ll get which means future rewards and more fun once we get this fully launched. Don’t be the slow poke!</li>
