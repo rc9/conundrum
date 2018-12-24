@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './images/racoon-cropped.png';
+import logo from './images/racoon-santa-hat.png';
 import './styles/index.scss';
 
 export default class Header extends Component {
