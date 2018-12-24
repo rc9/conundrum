@@ -9,7 +9,7 @@ export default class Video extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="shamwow-gif">
+        <div className="gif">
           <img src={infomercial} alt="call us now at 817-873-6318"/>
         </div>
         <Footer />

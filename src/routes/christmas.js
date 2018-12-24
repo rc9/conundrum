@@ -9,7 +9,7 @@ export default class Christmas extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="ho-ho-ho">
+        <div className="gif">
             <img src={snowy} alt="Winter is filled with cupidly dancers,
 Holiday movies, toys, and gay prancers. 
 Vixens feign joy to trap dashers’ asses
