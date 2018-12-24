@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../header.js';
 import Footer from '../footer.js';
 import '../styles/index.scss';
-import snowy from '../images/snowy.gif';
+import snowy from '../images/snowy-gold.gif';
 
 export default class Christmas extends Component {
   render() {
