@@ -1,7 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './routes/start.js';
-import Signup from './routes/signup.js';
+import Landing from './routes/landing.js';
+import Game from './routes/game.js';
 import Christmas from './routes/christmas.js';
 
 class App extends React.Component {
@@ -12,7 +13,8 @@ class App extends React.Component {
           <Switch>
             <Route path="/gettingstarted" component={Home} />
             <Route path="/hohoho" component={Christmas} />
-            <Route path="/" component={Signup} />
+            <Route path="/game" component={Game} />
+            <Route path="/" component={Landing} />
           </Switch>
       </Router>
     );

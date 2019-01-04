@@ -26,6 +26,14 @@ div.gif {
   padding: 15px;
 }
 
+div#wrapper {
+  width: 100%;
+}
+
+div#sidebar-header {
+  padding: 10px;
+}
+
 div.conundrum-header {
   padding: 5px;
   font-size: 36px;
@@ -33,6 +41,12 @@ div.conundrum-header {
   p {
     font-size: 36px;
     margin: 20px 20px 10px 20px;
+  }
+
+  p.main-header-2 {
+    font-size: 30px;
+    padding: 2px;
+    margin: 0px 10px;
   }
 }
 
@@ -82,5 +96,76 @@ div.conundrum-footer {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+  }
+}
+
+// Responsive styles
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+//phone
+.phone-device-show {
+  display: inline;
+}
+
+.phone-device-hidden {
+  display: none;
+}
+
+// tablet
+@media only screen and (min-width: 600px) {
+  .col-t-1 {width: 8.33%;}
+  .col-t-2 {width: 16.66%;}
+  .col-t-3 {width: 25%;}
+  .col-t-4 {width: 33.33%;}
+  .col-t-5 {width: 41.66%;}
+  .col-t-6 {width: 50%;}
+  .col-t-7 {width: 58.33%;}
+  .col-t-8 {width: 66.66%;}
+  .col-t-9 {width: 75%;}
+  .col-t-10 {width: 83.33%;}
+  .col-t-11 {width: 91.66%;}
+  .col-t-12 {width: 100%;}
+
+  .phone-device-show {
+    display: none;
+  }
+
+  .phone-device-hidden {
+    display: inline;
+  }
+}
+
+
+// desktop
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .phone-device-show {
+    display: none;
+  }
+
+  .phone-device-hidden {
+    display: inline;
   }
 }

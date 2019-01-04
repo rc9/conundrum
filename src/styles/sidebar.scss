@@ -1,0 +1,56 @@
+// Sidebar
+// top bar
+#sidebar {
+    max-width: 4%;
+    padding: 0 10px;
+
+    #side-bar {
+        z-index: 3;
+        background-color: rgba(125, 125, 125, .80);
+        position: fixed;
+        height: 20%;
+        width: 50%;
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 15px;
+    }
+
+    #top-bar {
+        width: 100%;
+        
+        span {
+            padding: 5px 10px;
+            
+            &.float-left {
+                float: left!important;
+            }
+            &.float-right {
+                float: right!important;
+            }
+        }
+    }
+
+    .nav-link {
+        height: 5vh;
+        border: red;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+#container-body {
+    h2 {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        h2 {
+            text-align: center;
+            font-size: 36px;
+        }
+    }
+}
