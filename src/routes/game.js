@@ -10,9 +10,10 @@ export default class Game extends Component {
         super(props);
         this.state = {
             position: 0,
+            points: 3290,
             questions: [
                 "Let's get going! I have a ring but no hands. I used to be plugged into the wall but now I follow you everywhere. What am I?",
-                "Don’t move your feet! What time is it?: https://goo.gl/qatCyS",
+                <span>Don’t move your feet!" <a target="_blank" href="https://goo.gl/qatCyS">What time is it?</a></span>,
                 "Flying tomorrow (11/28) out of the busiest airport in the world at that time, where would I be going?",
                 "“Hell on heels!” 2006 - what % did I get?"
             ],
@@ -35,9 +36,12 @@ export default class Game extends Component {
 
     handleSumbit(e) {
         e.preventDefault();
-        const a = this.state.ans;
-        if (this.state.answers[this.state.position].includes(a)) {
-            this.setState({position: this.state.position + 1});
+        const a = this.state.ans || "";
+        let pos = this.state.position;
+        if (this.state.answers[pos].includes(a.toLowerCase())) {
+            let p = (pos + 1) * 10 + 2 ** pos;
+            alert("Correct!\nYou scored " + p + " points!");
+            this.setState({position: this.state.position + 1, points: this.state.points + p});
             document.getElementById("answer-form").reset();
 
         } else {
@@ -54,7 +58,7 @@ export default class Game extends Component {
                 <div className="game-container">
                     <div className="welcome-header">
                         <div className="name-block">Welcome <b>PLAYER1!</b></div>
-                        <div className="point-block">4,230 XP</div>
+                        <div className="point-block">{this.state.points.toLocaleString()} XP</div>
                     </div>
 
                     <div className="question-block">
