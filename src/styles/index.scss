@@ -99,6 +99,16 @@ div.conundrum-footer {
   }
 }
 
+.toggle-display {
+  &-hide {
+    display: none;
+  }
+
+  &-show {
+    display: inline;
+  }
+}
+
 // Responsive styles
 
 [class*="col-"] {

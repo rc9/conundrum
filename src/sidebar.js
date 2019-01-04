@@ -8,16 +8,16 @@ class Sidebar extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {sidebar: "phone-device-hidden"};
+        this.state = {sidebar: "toggle-display-hide"};
 
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick(e) {
-        if (this.state.sidebar === "phone-device-hidden") {
-            this.setState({sidebar: "phone-device-show"})
+        if (this.state.sidebar === "toggle-display-hide") {
+            this.setState({sidebar: "toggle-display-show"})
         } else {
-            this.setState({sidebar: "phone-device-hidden"})
+            this.setState({sidebar: "toggle-display-hide"})
         }
     }
 
@@ -25,7 +25,7 @@ class Sidebar extends React.Component {
         return(
             <div id="sidebar" className="col-2 col-t-2" onClick={this.handleClick}>
                 <div id="navigation">
-                    <div id="top-bar" className="phone-device-show">
+                    <div id="top-bar">
                         <span className="float-left">☰</span>
                     </div>
                     <div id="side-bar" className={this.state.sidebar}>
