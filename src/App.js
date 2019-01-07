@@ -13,7 +13,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/gettingstarted" component={Home} />
             <Route path="/hohoho" component={Christmas} />
-            <Route path="/game" component={Game} />
+            <Route path="/games" component={Game} />
             <Route path="/" component={Landing} />
           </Switch>
       </Router>

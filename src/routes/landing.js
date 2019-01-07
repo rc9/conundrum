@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../header.js';
+import HeaderSmall from '../header2.js';
 import Footer from '../footer.js';
 import '../styles/index.scss';
 import '../styles/welcome.scss'
@@ -8,7 +8,7 @@ export default class Landing extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <HeaderSmall />
         <div className="welcome-page">
           <p className="welcome-message">
             Welcome to Conundrum, the first ever digital adventure app to test your thinking and solve some crazy fun problems.

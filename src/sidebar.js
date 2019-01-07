@@ -29,7 +29,8 @@ class Sidebar extends React.Component {
                         <span className="float-left">☰</span>
                     </div>
                     <div id="side-bar" className={this.state.sidebar}>
-                        <div className="nav-link"><NavLink to="/account">Account</NavLink></div>
+                        <div className="nav-link"><NavLink to="/gettingstarted">Account</NavLink></div>
+                        <div className="nav-link"><NavLink to="/games">Games</NavLink></div>
                         <div className="nav-link"><NavLink to="/leaderboard">Leaderboard</NavLink></div>
                         <div className="nav-link"><NavLink to="/invite">Invite</NavLink></div>
                         <div className="nav-link"><NavLink to="/logout">Logout</NavLink></div>

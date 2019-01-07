@@ -15,13 +15,19 @@ export default class Game extends Component {
                 "Let's get going! I have a ring but no hands. I used to be plugged into the wall but now I follow you everywhere. What am I?",
                 <span>Don’t move your feet!" <a target="_blank" href="https://goo.gl/qatCyS">What time is it?</a></span>,
                 "Flying tomorrow (11/28) out of the busiest airport in the world at that time, where would I be going?",
-                "“Hell on heels!” 2006 - what % did I get?"
+                "“Hell on heels!” 2006 - what % did I get?",
+                <span>No need to listen too long for <a target="_blank" href="https://youtu.be/PEGccV-NOm8?t=18">this prompt</a>... <br />(Sound on!)</span>,
+                <span>Last one: 
+                W<br />A<br />👅<br />O<br />Y<br />👄<br />I<br />O<br />A<br />🎢</span>
+
             ],
             answers: [
                 ["phone", "cell"],
                 ["2:38", "2:39", "2:40", "2:41"],
-                ["Raleigh"],
-                ["75", "75%"]
+                ["raleigh"],
+                ["75", "75%"],
+                ["louboutin"],
+                ["toxic"]
             ],
         };
 
@@ -38,7 +44,7 @@ export default class Game extends Component {
         e.preventDefault();
         const a = this.state.ans || "";
         let pos = this.state.position;
-        if (this.state.answers[pos].includes(a.toLowerCase())) {
+        if (this.state.answers[pos].includes(a.trim().toLowerCase())) {
             let p = (pos + 1) * 10 + 2 ** pos;
             alert("Correct!\nYou scored " + p + " points!");
             this.setState({position: this.state.position + 1, points: this.state.points + p});
