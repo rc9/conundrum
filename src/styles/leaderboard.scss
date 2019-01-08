@@ -1,0 +1,22 @@
+#leaderboard-tbl {
+    display: inline-block;
+
+    thead {
+        background-color: darkmagenta;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 5px;
+        border: solid 0.5px grey;
+        width: 70%;
+    }
+
+    tbody {
+        background-image: linear-gradient(blue, green, yellow, orange, red);
+
+        tr {
+            font-weight: bold;
+        }
+    }
+}

@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './routes/start.js';
 import Landing from './routes/landing.js';
 import Game from './routes/game.js';
-import Christmas from './routes/christmas.js';
+import Leaderboard from './routes/leaderboard.js';
 
 class App extends React.Component {
 
@@ -12,7 +12,7 @@ class App extends React.Component {
       <Router>
           <Switch>
             <Route path="/gettingstarted" component={Home} />
-            <Route path="/hohoho" component={Christmas} />
+            <Route path="/leaderboard" component={Leaderboard} />
             <Route path="/games" component={Game} />
             <Route path="/" component={Landing} />
           </Switch>

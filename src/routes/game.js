@@ -10,19 +10,18 @@ export default class Game extends Component {
         super(props);
         this.state = {
             position: 0,
-            points: 3290,
+            points: 3320,
             questions: [
                 "Let's get going! I have a ring but no hands. I used to be plugged into the wall but now I follow you everywhere. What am I?",
                 <span>Don’t move your feet!" <a target="_blank" href="https://goo.gl/qatCyS">What time is it?</a></span>,
                 "Flying tomorrow (11/28) out of the busiest airport in the world at that time, where would I be going?",
                 "“Hell on heels!” 2006 - what % did I get?",
                 <span>No need to listen too long for <a target="_blank" href="https://youtu.be/PEGccV-NOm8?t=18">this prompt</a>... <br />(Sound on!)</span>,
-                <span>Last one: 
-                W<br />A<br />👅<br />O<br />Y<br />👄<br />I<br />O<br />A<br />🎢</span>
+                <span>Last one:<br />W<br />A<br />👅<br />O<br />Y<br />👄<br />I<br />O<br />A<br />🎢</span>
 
             ],
             answers: [
-                ["phone", "cell"],
+                ["phone", "cell", "cellphone"],
                 ["2:38", "2:39", "2:40", "2:41"],
                 ["raleigh"],
                 ["75", "75%"],
@@ -58,30 +57,28 @@ export default class Game extends Component {
     render() {
         return (
             <div className="App">
-            <div id="wrapper">
-                <HeaderSmall />
+                <div id="wrapper">
+                    <HeaderSmall />
+                    <div className="game-container">
+                        <div className="welcome-header">
+                            <div className="name-block">Welcome <b>jase</b>!</div>
+                            <div className="point-block">{this.state.points.toLocaleString()} XP</div>
+                        </div>
 
-                <div className="game-container">
-                    <div className="welcome-header">
-                        <div className="name-block">Welcome <b>PLAYER1!</b></div>
-                        <div className="point-block">{this.state.points.toLocaleString()} XP</div>
-                    </div>
+                        <div className="question-block">
+                            <h3>Question {this.state.position + 1} of 6</h3>
+                            <p id="question-text">{this.state.questions[this.state.position]}</p>
+                        </div>
 
-                    <div className="question-block">
-                        <h3>Question {this.state.position + 1} of 6</h3>
-                        <p id="question-text">{this.state.questions[this.state.position]}</p>
-                    </div>
-
-                    <div className="answer-block">
-                        <form id="answer-form">
-                            <input type="text" className="answer-field" name="answer-field" required placeholder="Answer" onChange={this.changeAnswer}/>
-                            <input type="submit" className="answer-button" value="Submit" onClick={this.handleSumbit}/>
-                        </form>
+                        <div className="answer-block">
+                            <form id="answer-form">
+                                <input type="text" className="answer-field" name="answer-field" required placeholder="Answer" onChange={this.changeAnswer}/>
+                                <input type="submit" className="answer-button" value="Submit" onClick={this.handleSumbit}/>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <Footer />
+                <Footer />
             </div>
         );
     }

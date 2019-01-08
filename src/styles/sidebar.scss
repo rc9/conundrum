@@ -8,7 +8,7 @@
         z-index: 3;
         background-color: rgba(125, 125, 125, .80);
         position: fixed;
-        height: 20%;
+        height: 26%;
         width: 50%;
         top: 50px;
         right: 0;
@@ -33,7 +33,9 @@
 
     .nav-link {
         height: 5vh;
-        border: red;
+        // border: solid 1px  white;
+        display: grid;
+        align-items: center;
 
         a {
             color: white;
