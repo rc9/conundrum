@@ -10,6 +10,7 @@ export default class Game extends Component {
         super(props);
         this.state = {
             position: 0,
+            startPoints: 3320,
             points: 3320,
             questions: [
                 "Let's get going! I have a ring but no hands. I used to be plugged into the wall but now I follow you everywhere. What am I?",
@@ -53,6 +54,40 @@ export default class Game extends Component {
             alert("Hmmm...that doesn't look right. Try again!")
         }
     }
+    
+    renderGamePlay() {
+        return(
+            <div id="game-switch">
+                <div className="welcome-header">
+                    <div className="name-block">Welcome <b>jase</b>!</div>
+                    <div className="point-block">{this.state.points.toLocaleString()} XP</div>
+                </div>
+                <div className="question-block">
+                    <h3>Question {this.state.position + 1} of 6</h3>
+                    <p id="question-text">{this.state.questions[this.state.position]}</p>
+                </div>
+                <div className="answer-block">
+                    <form id="answer-form">
+                        <input type="text" className="answer-field" name="answer-field" required placeholder="Answer" onChange={this.changeAnswer}/>
+                        <input type="submit" className="answer-button" value="Submit" onClick={this.handleSumbit}/>
+                    </form>
+                </div>
+            </div>
+        )
+    }
+
+    renderGameFinish() {
+        return(
+            <div id="game-switch">
+                <div className="game-finish">
+                    <div className="name-block">Congratulations <b>jase</b>!</div>
+                    <p>You completed the game! You added {this.state.points - this.state.startPoints} points to your score!
+                    You're total is now {this.state.points}!
+                    </p>
+                </div>
+            </div>
+        )
+    }
 
     render() {
         return (
@@ -60,22 +95,7 @@ export default class Game extends Component {
                 <div id="wrapper">
                     <HeaderSmall />
                     <div className="game-container">
-                        <div className="welcome-header">
-                            <div className="name-block">Welcome <b>jase</b>!</div>
-                            <div className="point-block">{this.state.points.toLocaleString()} XP</div>
-                        </div>
-
-                        <div className="question-block">
-                            <h3>Question {this.state.position + 1} of 6</h3>
-                            <p id="question-text">{this.state.questions[this.state.position]}</p>
-                        </div>
-
-                        <div className="answer-block">
-                            <form id="answer-form">
-                                <input type="text" className="answer-field" name="answer-field" required placeholder="Answer" onChange={this.changeAnswer}/>
-                                <input type="submit" className="answer-button" value="Submit" onClick={this.handleSumbit}/>
-                            </form>
-                        </div>
+                        {this.state.position >= this.state.questions.length ? this.renderGameFinish() : this.renderGamePlay()}
                     </div>
                 </div>
                 <Footer />

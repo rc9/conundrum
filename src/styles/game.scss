@@ -1,8 +1,12 @@
 div.game-container {
     $inputwidth: 70vw;
 
+    .welcome-header {
+        .name-block {
+            font-size: 20px;
+        }
+    }
     .question-block {
-
         h3 {
             margin: 15px 0 10px 0;
             background-color: darkmagenta;
@@ -29,6 +33,13 @@ div.game-container {
             display: block;
             margin: auto;
             background-color: white;
+        }
+    }
+
+    .game-finish {
+        .name-block {
+            font-size: 24px;
+            background-color: darkmagenta;
         }
     }
 }
