@@ -7,8 +7,8 @@
     #side-bar {
         z-index: 3;
         background-color: rgba(125, 125, 125, .80);
-        position: fixed;
-        height: 26%;
+        position: absolute;
+        height: 200px;
         width: 50%;
         top: 50px;
         right: 0;
@@ -32,7 +32,7 @@
     }
 
     .nav-link {
-        height: 5vh;
+        height: 40px;
         // border: solid 1px  white;
         display: grid;
         align-items: center;
