@@ -3,6 +3,7 @@ import Header from '../header.js'
 import '../styles/index.scss';
 import '../styles/store.scss';
 import soonImg from '../images/coming-soon.jpg';
+import Footer from '../footer.js';
 
 export default class Store extends Component {
   render() {
@@ -12,7 +13,7 @@ export default class Store extends Component {
         <div className="store">
             <h2 className="store-title">Star Store</h2>
             <div className="image-list">
-                {[...Array(12)].map((_, i) =>
+                {[...Array(9)].map((_, i) =>
                     <div className="image-li" key={i}>
                         <img className="stock-img" src={soonImg} alt="Coming Soon..."/>
                         <span>30 🌟</span>
@@ -20,6 +21,7 @@ export default class Store extends Component {
                 )}
             </div>
         </div>
+        <Footer />
       </div>
     );
   }

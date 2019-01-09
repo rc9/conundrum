@@ -1,16 +1,15 @@
 .store {
-    /* min-height: 100%; */
-    color: white;
-    align-items: center;
-    justify-content: center;
 
-    .image-li {
-        max-width: 32%;
-        padding: 1px;
-        float: left;
+    .image-list {
 
-        .stock-img {
-            max-width: 100%;
+        .image-li {
+            max-width: 32%;
+            padding: 1px;
+            display: inline-block;
+
+            .stock-img {
+                max-width: 100%;
+            }
         }
     }
 }
