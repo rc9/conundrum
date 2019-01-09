@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './styles/index.scss';
-// import './styles/body.scss';
 
 class Sidebar extends React.Component {
 
@@ -32,7 +31,7 @@ class Sidebar extends React.Component {
                         <div className="nav-link"><NavLink to="/gettingstarted">Account</NavLink></div>
                         <div className="nav-link"><NavLink to="/games">Games</NavLink></div>
                         <div className="nav-link"><NavLink to="/leaderboard">Leaderboard</NavLink></div>
-                        <div className="nav-link"><NavLink to="/invite">Invite</NavLink></div>
+                        <div className="nav-link"><NavLink to="/store">Store</NavLink></div>
                         <div className="nav-link"><NavLink to="/logout">Logout</NavLink></div>
                     </div>
                 </div>

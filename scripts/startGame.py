@@ -20,7 +20,7 @@ def send_twilio(phone, token):
     message = client.messages.create(
         to=phone,
         from_="+18562633076",
-        body="Welcome to CONUNDRUM! Thanks for signing up to play the very first game! To get started, head to http://www.conundrumapp.com/herewego - Good luck!"
+        body="Welcome to Thinkling! Thanks for signing up to play the very first game! To get started, head to http://www.getthinkling.com/herewego - Good luck!"
         )
 
 if(len(sys.argv) < 3):

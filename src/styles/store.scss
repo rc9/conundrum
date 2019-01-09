@@ -5,8 +5,13 @@
     justify-content: center;
 
     .image-li {
-        max-width: 33%;
+        max-width: 32%;
+        padding: 1px;
         float: left;
+
+        .stock-img {
+            max-width: 100%;
+        }
     }
 }
 

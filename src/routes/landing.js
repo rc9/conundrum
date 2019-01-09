@@ -11,7 +11,7 @@ export default class Landing extends Component {
         <HeaderSmall />
         <div className="welcome-page">
           <p className="welcome-message">
-            Welcome to Conundrum, the first ever digital adventure app to test your thinking and solve some crazy fun problems.
+            Welcome to Thinkling, the first ever digital adventure app to test your thinking and solve some crazy fun problems.
             <br />
             We’re currently in the process of drumming up some fun and should be launched super soon.
             <br />

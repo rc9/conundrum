@@ -16,7 +16,7 @@ export default class Home extends Component {
               <br />
               <br />
               <br />
-              Welcome to Conundrum!
+              Welcome to Thinkling!
               <br />
               As a member of our exclusive testing group, thanks in advance for drumming up some fun and participating in this exciting adventure.
               <br />
@@ -32,7 +32,7 @@ export default class Home extends Component {
               <br />
               <li type="num">Speed is your friend - the quicker you get to the end, the more points you’ll get which means future rewards and more fun once we get this fully launched. Don’t be the slow poke!</li>
               <br />
-              <li type="num">Have fun and let us know what you think! After the end of this adventure, we’d love to get some feedback on what went well and what didn’t. Anything you can provide would be super helpful as we launch our next Conundrum in the very near future.</li>
+              <li type="num">Have fun and let us know what you think! After the end of this adventure, we’d love to get some feedback on what went well and what didn’t. Anything you can provide would be super helpful as we launch our next Thinkling in the very near future.</li>
               <br />
               <li type="num">Did you get all of that? Just text "READY" to the earlier number and we'll be on our way!</li>
             </ol>

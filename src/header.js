@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Sidebar from './sidebar.js';
 import './styles/index.scss';
 import './styles/sidebar.scss';
-import logo from './images/racoon-cropped.png'
+import logo from './images/thinkling-logo.png'
 
 export default class HeaderSmall extends Component {
     render() {
@@ -10,8 +10,8 @@ export default class HeaderSmall extends Component {
 
             <div id="sidebar-header">
                 <Sidebar />
-                <div className="conundrum-header">
-                    <p className="main-header-2"><b>CONUNDRUM</b></p>
+                <div className="thinkling-header">
+                    <p className="main-header-2"><b>THINKLING</b></p>
                     <img src={logo} className="App-logo" alt="logo" />
                 </div>
             </div>
