@@ -105,21 +105,21 @@ div.thinkling-footer {
 
 .App-logo {
   margin: 20px 0 0 0;
-  animation: color-fade-zoom infinite 5s alternate;
+  animation: logo-zoom infinite 5s alternate;
   height: 40vmin;
 }
 
 
-@keyframes color-fade-zoom {
+@keyframes logo-zoom {
   from {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
   to {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 

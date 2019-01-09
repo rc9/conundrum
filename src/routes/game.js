@@ -46,7 +46,7 @@ export default class Game extends Component {
         let pos = this.state.position;
         if (this.state.answers[pos].includes(a.trim().toLowerCase())) {
             let p = (pos + 1) * 10 + 2 ** pos;
-            alert("Correct!\nYou scored " + p + " points!");
+            alert("Correct!\nYou scored " + p + " 🌟!");
             this.setState({position: this.state.position + 1, points: this.state.points + p});
             document.getElementById("answer-form").reset();
 
@@ -60,7 +60,7 @@ export default class Game extends Component {
             <div id="game-switch">
                 <div className="welcome-header">
                     <div className="name-block">Welcome <b>jase</b>!</div>
-                    <div className="point-block">{this.state.points.toLocaleString()} XP</div>
+                    <div className="point-block">{this.state.points.toLocaleString()} 🌟</div>
                 </div>
                 <div className="question-block">
                     <h3>Question {this.state.position + 1} of 6</h3>
@@ -81,8 +81,8 @@ export default class Game extends Component {
             <div id="game-switch">
                 <div className="game-finish">
                     <div className="name-block">Congratulations <b>jase</b>!</div>
-                    <p>You completed the game! You added {this.state.points - this.state.startPoints} points to your score!
-                    You're total is now {this.state.points}!
+                    <p>You completed the game! You added {this.state.points - this.state.startPoints} 🌟 to your score!
+                    You're total is now <b>{this.state.points.toLocaleString()} 🌟</b>!
                     </p>
                 </div>
             </div>
