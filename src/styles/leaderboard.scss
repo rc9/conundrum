@@ -13,7 +13,9 @@
     }
 
     tbody {
-        background-image: linear-gradient(blue, green, yellow, orange, red);
+        background: linear-gradient(to bottom, rgb(0, 0, 170), rgb(0, 175, 255));
+        background: -webkit-linear-gradient(to bottom, rgb(0, 0, 170), rgb(0, 175, 255));
+        background: -moz-linear-gradient(to bottom, rgb(0, 0, 170), rgb(0, 175, 255));
 
         tr {
             font-weight: bold;

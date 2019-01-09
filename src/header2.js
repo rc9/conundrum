@@ -10,7 +10,7 @@ export default class HeaderSmall extends Component {
             <div id="sidebar-header">
                 <Sidebar />
                 <div className="thinkling-header">
-                    <p className="main-header-2"><b>THINKLING</b></p>
+                    <p className="main-header-2 title-header"><b>thinkling</b></p>
                 </div>
             </div>
         )
