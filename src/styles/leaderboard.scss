@@ -1,8 +1,10 @@
+@import 'consts.scss';
+
 #leaderboard-tbl {
     display: inline-block;
 
     thead {
-        background-color: darkmagenta;
+        background-color: $core-color;
     }
 
     th, td {
@@ -13,12 +15,19 @@
     }
 
     tbody {
-        background: linear-gradient(to bottom, rgb(0, 0, 170), rgb(0, 175, 255));
-        background: -webkit-linear-gradient(to bottom, rgb(0, 0, 170), rgb(0, 175, 255));
-        background: -moz-linear-gradient(to bottom, rgb(0, 0, 170), rgb(0, 175, 255));
-
-        tr {
+        background: linear-gradient(top, $dark-blue, $light-blue);
+        background: -webkit-linear-gradient(top, $dark-blue, $light-blue);
+        background: -moz-linear-gradient(top, $dark-blue, $light-blue);
+        background: -ms-linear-gradient(top, $dark-blue, $light-blue);
+        
+        tr#row-0 {
             font-weight: bold;
+            
+            // &:nth-child(even) {
+            //     -webkit-box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, .2);    
+            //     box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, .2);
+            //     background: linear-gradient(top, $light-blue, $dark-blue);
+            // }
         }
     }
 }

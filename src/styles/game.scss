@@ -1,3 +1,5 @@
+@import 'consts.scss';
+
 div.game-container {
     $inputwidth: 70vw;
 
@@ -9,7 +11,7 @@ div.game-container {
     .question-block {
         h3 {
             margin: 15px 0 10px 0;
-            background-color: darkmagenta;
+            background-color: $light-blue;
         }
         #question-text {
             padding: 5px;
@@ -39,7 +41,7 @@ div.game-container {
     .game-finish {
         .name-block {
             font-size: 24px;
-            background-color: darkmagenta;
+            background-color: $core-color;
         }
     }
 }
